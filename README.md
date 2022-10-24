@@ -7,7 +7,9 @@
 
 ----
 
+> Logisim 实现
 
+<img height=150 src="./images/RAM.png" />
 
 > 接口解析
 ```text
@@ -18,6 +20,14 @@
 [ Clr: Clear       ]    重置接口    输入 1 时 异步重置整个 RAM
 [ Sel: Chip Select ]    片选接口    输入 0 时 锁定整个 RAM
 ```
+
+> 写入模式
+
+<img height=150 src="./images/RAM-Write.png" />
+
+> 读取模式
+
+<img height=150 src="./images/RAM-Read.png" />
 
 #### ROM 设计
 
@@ -32,6 +42,11 @@
 > Logisim 实现
 
 <img height=150 src="./images/ROM.png" />
+
+
+> 读取 `02` 地址上的数据
+
+<img height=150 src="./images/ROM-READ.png" />
 
 > 接口解析
 ```text
