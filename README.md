@@ -17,15 +17,15 @@
 [ D:   Data        ]    数据接口    数据的 输入 / 输出 接口
 [ ld:  Load        ]    载入接口    输入 1 时 允许从 RAM 读取数据
 [ str: Store       ]    保存接口    输入 1 时 允许向 RAM 写入数据
-[ Clr: Clear       ]    重置接口    输入 1 时 异步重置整个 RAM
+[ Clr: Clear       ]    重置接口    输入 1 时 异步将整个 RAM 数据重置为 0
 [ Sel: Chip Select ]    片选接口    输入 0 时 锁定整个 RAM
 ```
 
-> 写入模式
+> 向地址 `02` 写入数据
 
 <img height=150 src="./images/RAM-Write.png" />
 
-> 读取模式
+> 读取 `02` 地址上的数据
 
 <img height=150 src="./images/RAM-Read.png" />
 
