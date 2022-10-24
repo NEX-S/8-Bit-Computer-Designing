@@ -7,11 +7,13 @@
 
 ----
 
+[ ` Random Access Memory - RAM ` ]
+
 > Logisim 实现
 
 <img height=150 src="./images/RAM.png" />
 
-> 接口解析
+> RAM 接口解析
 ```text
 [ A:   Adress      ]    地址接口    接收需要被读取数据的地址
 [ D:   Data        ]    数据接口    数据的 输入 / 输出 接口
@@ -43,14 +45,15 @@
 
 <img height=150 src="./images/ROM.png" />
 
-
-> 读取 `02` 地址上的数据
-
-<img height=150 src="./images/ROM-READ.png" />
-
-> 接口解析
+> ROM 接口解析
 ```text
 [ A:   Adress      ]    地址接口    接收需要被读取数据的地址
 [ D:   Data        ]    数据接口    读到的数据从此接口输出
 [ Sel: Chip Select ]    片选接口    输入 0 时可以锁定整个 ROM
 ```
+
+
+> 读取 `02` 地址上的数据
+
+<img height=150 src="./images/ROM-READ.png" />
+
